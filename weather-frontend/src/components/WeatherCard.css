@@ -1,0 +1,32 @@
+/* WeatherCard.css */
+.weather-card {
+    background-color: rgba(0, 0, 0, 0.647);
+    color: wheat;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    text-align: center;
+}
+
+.weather-card h2 {
+    margin-bottom: 10px;
+}
+
+.weather-card p {
+    margin: 5px 0;
+}
+
+.weather-summary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.weather-summary-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
