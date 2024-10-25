@@ -72,7 +72,14 @@ Before you begin, ensure you have the following installed:
    npm install
    ```
 
-3. **Install dependencies for the frontend:**
+3. **Change .env **
+   ```bash
+   MONGO_URI="YOUR_MONGO_DB_CONNECTION_STRING"
+   API_KEY="YOUR_OPENWEATHER_API_KEY"
+   ```
+  
+
+5. **Install dependencies for the frontend:**
    ```bash
    cd weather-frontend
    npm install
