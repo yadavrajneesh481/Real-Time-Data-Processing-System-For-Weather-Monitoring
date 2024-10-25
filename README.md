@@ -65,7 +65,7 @@ Before you begin, ensure you have the following installed:
 
 3. **Install dependencies for the frontend:**
    ```bash
-   cd ../frontend
+   cd weather-frontend
    npm install
    ```
 
@@ -81,7 +81,7 @@ Before you begin, ensure you have the following installed:
 
 2. **Run the frontend application:**
    ```bash
-   cd ../weather-frontend
+   cd weather-frontend
    npm start
    ```
    This will launch the Weather Dashboard on `http://localhost:3000`.
