@@ -96,5 +96,5 @@ Contributions are welcome! Please feel free to submit a pull request or open an 
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
-Your Name - yadavrajneesh481@gmail.com
+Email - yadavrajneesh481@gmail.com
 
