@@ -61,7 +61,7 @@ const WeatherCard = ({ city }) => {
 
   const loadWeatherData = async () => {
     try {
-        const url = `https://real-time-data-processing-system-for-weather-monitoring.vercel.app/?vercelToolbarCode=qLHYfDtKAKfZ83K/api/${city}/forecast`;
+        const url = `http://localhost:5000/api/${city}/forecast`;
         const response = await axios.get(url);
         
         if (!response.data || !response.data.daily) {
@@ -97,7 +97,7 @@ const WeatherCard = ({ city }) => {
   
   const loadCurrentWeather = async () => {
     try {
-      const url = `https://real-time-data-processing-system-for-weather-monitoring.vercel.app/?vercelToolbarCode=qLHYfDtKAKfZ83K/api/${city}`;
+      const url = `http://localhost:5000/api/${city}`;
       const response = await axios.get(url);
       console.log('Weather API Response:', response.data);
 
