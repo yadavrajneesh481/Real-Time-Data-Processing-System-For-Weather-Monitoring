@@ -54,7 +54,7 @@ Before you begin, ensure you have the following installed:
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/yadavrajneesh481/Real-Time-Data-Processing-System-For-Weather-Monitoring.git
-   cd weather-dashboard
+   
    ```
 
 2. **Install dependencies for the backend:**
