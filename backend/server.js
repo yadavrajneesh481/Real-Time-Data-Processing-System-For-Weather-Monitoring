@@ -12,6 +12,9 @@ connectDB();
 
 
 app.use('/api', weatherRoutes);  
+app.get("/",(req,res)=>{
+  res.json("hello")
+})
 
 // Start the server
 const PORT = process.env.PORT || 5000;
