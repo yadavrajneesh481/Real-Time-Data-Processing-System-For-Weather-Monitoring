@@ -3,7 +3,7 @@ const WeatherSummary = require('./weatherModel');
 
 const CURRENT_WEATHER_URL = 'https://api.openweathermap.org/data/2.5/weather';
 const FORECAST_URL = 'https://api.openweathermap.org/data/2.5/forecast';
-const API_KEY = '43e401bc4bd69a8d0182c720e1306440';  // Replace with your actual API key
+const API_KEY = 'YOUR API KEY ';  // Replace with your actual API key
 
 // Function to save weather data received from frontend to MongoDB
 const fetchAndSaveWeatherData = async (req, res) => {
