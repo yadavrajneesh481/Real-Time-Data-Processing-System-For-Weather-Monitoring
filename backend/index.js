@@ -4,6 +4,7 @@ const connectDB = require('./db');
 const weatherRoutes = require('./routes');  
 
 const app = express();
+app.use(cors());
 
 
 
