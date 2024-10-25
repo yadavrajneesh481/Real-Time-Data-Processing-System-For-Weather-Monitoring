@@ -7,7 +7,7 @@ const app = express();
 
 app.use(cors(
   {
-    origin:['https://real-time-data-processing-system-for-weather-monitoring-28hi.vercel.app/'],
+    origin:['/'],
     methods:['GET','POST','PUT','DELETE'],
     credentials:true
   }
