@@ -61,7 +61,7 @@ const WeatherCard = ({ city }) => {
 
   const loadWeatherData = async () => {
     try {
-        const url = `https://real-time-data-processing-system-for-weather-monitoring.vercel.app/api/${city}/forecast`;
+        const url = `http://localhost:5000/api/${city}/forecast`;
         const response = await axios.get(url);
         
         if (!response.data || !response.data.daily) {
@@ -74,11 +74,15 @@ const WeatherCard = ({ city }) => {
 
         // Set current weather data
         if (response.data.current) {
+            const maxTemp = Math.round(response.data.current.main.temp_max);
+            const minTemp = Math.round(response.data.current.main.temp_min);
+            const avgTemp = Math.round((maxTemp + minTemp) / 2);
+
             setCurrentWeather({
                 temp: Math.round(response.data.current.main.temp),
-                maxTemp: Math.round(response.data.current.main.temp_max),
-                minTemp: Math.round(response.data.current.main.temp_min),
-                avgTemp: Math.round((response.data.current.main.temp_max + response.data.current.main.temp_min) / 2),
+                maxTemp: maxTemp,
+                minTemp: minTemp,
+                avgTemp: avgTemp,
                 condition: response.data.current.weather[0].main,
                 humidity: response.data.current.main.humidity,
                 windSpeed: Number(response.data.current.wind.speed.toFixed(1))
@@ -93,15 +97,19 @@ const WeatherCard = ({ city }) => {
   
   const loadCurrentWeather = async () => {
     try {
-      const url = `https://real-time-data-processing-system-for-weather-monitoring.vercel.app/api/${city}`;
+      const url = `http://localhost:5000/api/${city}`;
       const response = await axios.get(url);
       console.log('Weather API Response:', response.data);
 
+      const maxTemp = Math.round(response.data.main.temp_max);
+      const minTemp = Math.round(response.data.main.temp_min);
+      const avgTemp = Math.round((maxTemp + minTemp) / 2);
+
       setCurrentWeather({
         temp: Math.round(response.data.main.temp),
-        maxTemp: Math.round(response.data.main.temp_max),
-        minTemp: Math.round(response.data.main.temp_min),
-        avgTemp: Math.round(response.data.main.temp_avg),
+        maxTemp: maxTemp,
+        minTemp: minTemp,
+        avgTemp: avgTemp,
         condition: response.data.weather[0].main,
         humidity: Math.round(response.data.main.humidity),
         windSpeed: Number(response.data.wind.speed.toFixed(1))
