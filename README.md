@@ -72,7 +72,7 @@ Before you begin, ensure you have the following installed:
    npm install
    ```
 
-3. **Change .env **
+3. **Change .env file with your credits**
    ```bash
    MONGO_URI="YOUR_MONGO_DB_CONNECTION_STRING"
    API_KEY="YOUR_OPENWEATHER_API_KEY"
