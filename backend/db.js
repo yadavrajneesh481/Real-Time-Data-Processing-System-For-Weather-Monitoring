@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
-
+const MONGO_URI = 'YOUR MONGO URL';
 const connectDB = async () => {
   try {
-    await mongoose.connect('mongodb+srv://yadavrajneesh481:yadavrajneesh481@cluster0.vutzzt4.mongodb.net/', {
+    await mongoose.connect(MONGO_URI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
