@@ -4,8 +4,18 @@ const connectDB = require('./db');
 const weatherRoutes = require('./routes');  
 
 const app = express();
-app.use(cors());  
+
+app.use(cors(
+  {
+    origin:['https://real-time-data-processing-system-for-weather-monitoring-kodu.vercel.app/'],
+    methods:['GET','POST','PUT','DELETE'],
+    credentials:true
+  }
+)); 
+
+
 app.use(express.json());  
+
 
 // Connect to MongoDB
 connectDB();
