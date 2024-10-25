@@ -32,9 +32,11 @@ Features of the weather summary table include:
 Both the graphical and tabular representations are designed to provide users with clear, concise, and useful weather information, helping them make informed decisions based on weather conditions.
 
 ## Images
+
+### UI IMG 
 ![UI Image](https://github.com/yadavrajneesh481/Real-Time-Data-Processing-System-For-Weather-Monitoring/blob/main/UI.png)
 
-
+### JSON DATA IMG 
 ![JSON_DATA](https://github.com/yadavrajneesh481/Real-Time-Data-Processing-System-For-Weather-Monitoring/blob/main/DATA.png)
 
 
